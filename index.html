@@ -7,62 +7,152 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section>
+    <section id="landing">
         <nav>
-            <img src="https://module-2-fp-example-website.vercel.app/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-alt="">
-       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact__us">Contact Us</a></li>
-        <li><a href="#login">Login</a></li>
-        <li><a href="signup">Signup</a></li>
-       </ul>
-    </nav>
-    <header>
-        <div>
-            <h1>Beautiful React Templates for you</h1>
-                <p>Our Templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                <button>Get Started </button>
+            <div class="row nav__row">
+            <div class="nav__logo">
+            <img class="nav__logo--img" src="https://module-2-fp-example-website.vercel.app/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO"/>
+            <div class="nav__logo--title">Treact
+            </div>
+       <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link login">Login</a>
+            <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()">
+             <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="btn__menu--svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          </div>
+        </nav>
+        <div class="menu">
+
         </div>
-        <button>header__email</button>
-        <p>OUR TRUSTED CUSTOMERS</p>
-            <img src="https://module-2-fp-example-website.vercel.app/assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Headers customers">
-            <figure>
-                <img src="https://module-2-fp-example-website.vercel.app/assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Header Image">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="light___StyledCloseIcon-lj69nl-14 fASujC"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="menu__links">
+          <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+          <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+          <a href="#pricing" class="menu__link" onclick="closeMenu()"
+            >Pricing</a
+          >
+          <a href="#contact__us" class="menu__link" onclick="closeMenu()"
+            >Contact Us</a
+          >
+          <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+          <a
+            href="#signup"
+            class="menu__link menu__link--primary"
+            onclick="closeMenu()"
+            >Sign up</a
+          >
+          </div>
+        </div>
+    <header>
+         <div class="container">
+          <div class="row">
+           <div class="header__description">
+              <h1>
+                Beautiful React Templates <span class="purple">for you.</span>
+              </h1>
+              <p class="header__description--para">
+                Our templates are easy to setup, understand and customize. Fully
+                modular components with a variety of pages and components.
+              </p>
+              <div class="header__email">
+                <input
+                  type="text"
+                  class="header__email--input"
+                  placeholder="Your E-mail Address"
+                />
+                <button class="header__email--btn">Get Started</button>
+              </div>
+              <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+              <img
+                src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                class="header__customers"
+              />
+            </div>
+            <figure class="header__img--wrapper">
+              <img
+                src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                class="header__img"
+              />
             </figure>
+          </div>
+        </div>
     </header>
    </section>
 
     <main>
-      <section"features">
+            <section id="features">
         <div class="container">
-            <div class="row__narrow">
-               <h4>FEATURES</h4>
-               <h2>We Have An Amazing Service.</h2>
-               <div class="section__para">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, vitae tempora sed alias animi suscipit fugiat aut a quia, deserunt harum, voluptate sapiente reprehenderit unde officia facere non nostrum reiciendis.
-                </div>
-                <div class="features">
-                  <div class="feature">
-                    <div class="feature__row">
-                <figure>
-                    <img src="33assets/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="feature__img"/>
-                </figure>
-                <div class="feature__text">
+          <div class="row__narrow">
+            <h4 class="section__tag">FEATURES</h4>
+            <h2 class="section__title">
+              We Have Amazing <span class="purple">Service.</span>
+            </h2>
+            <div class="section__para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img
+                      src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__text">
                     <h2 class="feature__title">Secure</h2>
                     <p class="feature__para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur neque repellat blanditiis ex beatae iusto? Ratione facere velit tenetur debitis dolores a maxime quaerat excepturi. Nam beatae id veritatis?
-             </p>
-          </div>
-         </div>
-        </div>
-        <div class="feature">
-            <div class="feature__row">
-              <figure class="feature__img--wrapper">
-                <img src="33assets/assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" class="feature__img"/>
-              </figure>
+                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                      quis nostrud.
+                    </p>
+                      </div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img
+                      src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                      class="feature__img"
+                    />
+                  </figure>
               <div class="feature__text">
                 <h2 class="feature__para">24/7</h2>
                 <p class="feature__para">
