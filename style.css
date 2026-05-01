@@ -88,7 +88,11 @@ button {
   border: none;
 }
 
-/* NAVIGATION */
+/*
+
+ NAVIGATION 
+ 
+ */
 
 nav {
   padding-top: 32px;
@@ -260,7 +264,11 @@ nav {
   right: 18px;
 }
 
-/* HEADER / ABOUT US */
+/* 
+
+HEADER / ABOUT US 
+
+*/
 
 section {
   padding: 0 32px;
@@ -359,7 +367,11 @@ header {
   max-width: 768px;
 }
 
-/* FEATURES */
+/* 
+
+FEATURES 
+
+*/
 
 #features {
   position: relative;
@@ -427,7 +439,11 @@ header {
   margin: 0 auto;
 }
 
-/* QUALITY WORK */
+/* 
+
+QUALITY WORK 
+
+*/
 
 #quality .row {
   display: flex;
@@ -474,7 +490,11 @@ header {
   z-index: 1;
 }
 
-/* STEPS */
+/* 
+
+STEPS 
+
+*/
 
 #steps .row {
   display: flex;
@@ -539,7 +559,11 @@ header {
   fill: currentColor;
 }
 
-/* VALUES */
+/* 
+
+VALUES 
+
+*/
 
 #values .row {
   display: flex;
@@ -615,7 +639,11 @@ header {
   color: #718096;
 }
 
-/* PRICING */
+/* 
+
+PRICING 
+
+*/
 
 #pricing .row {
   display: flex;
@@ -806,7 +834,11 @@ header {
   justify-content: space-between;
 }
 
-/* TESTIMONIALS */
+/* 
+
+TESTIMONIALS 
+
+*/
 section #testimonials {
   padding: 0px;
 }
@@ -928,7 +960,11 @@ section #testimonials {
   height: 20px;
 }
 
-/* START / CALL TO ACTION */
+/* 
+
+START / CALL TO ACTION 
+
+*/
 
 main {
   margin-bottom: 96px;
@@ -1021,7 +1057,11 @@ main {
   opacity: 0.5;
 }
 
-/* FOOTER */
+/* 
+
+FOOTER 
+
+*/
 
 footer {
   padding: 96px 32px;
@@ -1148,7 +1188,11 @@ footer {
   opacity: 0.5;
 }
 
-/* MOBILE RESPONSIVENESS */
+/* 
+
+MOBILE RESPONSIVENESS 
+
+*/
 
 @media (max-width: 1280px) {
   header .row {
